@@ -1,0 +1,13 @@
+Per far salire tutto il contesto usare questi comandi:
+
+docker-compose up -d --build
+mvn clean install -Dmaven.test.skip=true
+java -jar -Dspring.profiles.active=local target/demo-1.0.0.jar
+
+Per terminare il contesto utilizzare invece:
+docker compose down
+
+Per spegnere l'app basta CTRL+C sulla CLI
+
+link openapi:
+http://localhost:8080/swagger-ui/index.html

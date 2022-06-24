@@ -1,0 +1,32 @@
+spring:
+  mail:
+    host: smtp.mailtrap.io
+    username: 8f32372b57d9c1
+    protocol: smtp
+    port: '25'
+    password: 45ed21bceeaa59
+  datasource:
+    password: password
+    username: sa
+    url: jdbc:h2:mem:testdb
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  packages-to-scan: com.guarino.ingsw.controller
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui
+    version: 2.0
+
+jwt:
+  public:
+    key: classpath:app.pub
+  secret: polimi
+  expiration:
+    time: '90000'
+  private:
+    key: classpath:app.key
+server:
+  port: '8080'

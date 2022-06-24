@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+
+  maria_db:
+    image: "mariadb:10.5.8"
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: development
+      MYSQL_USER: development
+      MYSQL_PASSWORD: nE5kMc7JCGNqwDQM
+      MYSQL_ROOT_PASSWORD: nE5kMc7JCGNqwDQN
